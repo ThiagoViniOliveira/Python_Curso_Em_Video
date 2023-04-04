@@ -1,0 +1,52 @@
+Quando eu coloco apenas um input dentro de uma variável,
+o python automaticamente considera aquela varável como uma
+'String" ou seja, um texto. Portanto se eu digitasse esse
+código:
+
+n1 = input('Digite um número')
+n2 = input('Digite um número')
+s = n1+n2
+print('A soma vale {}'.format(s)
+
+e digitasse dentro desses inputs 3 e 2
+
+Esse código me mostraria 32, por que eu apenas coloquei input
+que para o python é uma string.
+
+para que esse código rodassse da forma certa, eu teria
+que especificar para o python que essa variável não é
+um texto e sim um número.
+
+No python, existem alguns "Tipos primitivos", que são:
+str (string) que é texto
+float (reais ou flutuantes)
+int (inteiro) numeros inteiros
+bool (booleanos) True ou False (verdadeiro ou Falso)
+
+para saber o tipo primitivo de uma variável, eu preciso usar
+o type quando for dar o print
+
+n1 = input('Digite um valor: ')
+print(type(n1))
+
+aqui ele me retornaria <class 'str'>, ou seja essa variável
+é uma string, por mais que eu digitasse um numero, ainda
+sim seria uma variavel. Então para que eu possa colocar
+um numero e essa variavel ser do tipo int, eu teria que fazer
+
+n1 = int(input('Digite um valor: ')
+print(type(n1))
+
+aqui ele me retornaria <class int>, pois eu especifiquei
+para o python que aquela variável é do tipo int
+
+
+Outra coisa que da pra fazer é no print, saber se a variável
+é numerico, alfabético, alfanumérico etc. e eu faço isso
+utilizando: variável.is, quando eu coloco n.is ele me abre uma serie
+de exemplos, isnumeric (saber se é numerico), isalpha (pra
+saber se é alfabético), isalnum (pra saber se é alfanumerico).
+etc... no nosso caso ficaria
+
+n = input('Digite algo: ')
+print(n.isnumeric())

@@ -1,0 +1,7 @@
+algo = input('Digite algo: ')
+print('A variável é da ',type(algo))
+print('O que você digitou, é um número? ',algo.isalnum())
+print('O que você digitou, é um Texto? ',algo.isalpha())
+print('O que você digitou, é alfanumérico? ', algo.isalnum())
+print('O que você digitou estava em maiúsculas? ', algo.isupper())
+print('O que você digitou estava em minusculas? ', algo.islower())
